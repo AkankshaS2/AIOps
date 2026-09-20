@@ -1,0 +1,10 @@
+git clone [url-]
+git status
+git add .
+git commit -m "[message]"
+git pull
+git push
+git checkout -b [branch]
+git switch [branch]
+gh pr create
+gh pr merge
