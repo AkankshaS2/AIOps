@@ -1,0 +1,27 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Kafka installation directory & tar archive (large binaries)
+kafka_*/
+*.tgz
+*.tar.gz
+
+# Runtime logs
+*.log
+logs/
+
+# Environment variables & secrets
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+.*.tgz

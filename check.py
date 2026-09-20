@@ -13,4 +13,4 @@ data=[
     ("server1",56),
     ("server1",56)
 
-]df.sp
+]df.sp wget https://downloads.apache.org/kafka/4.1.0/kafka_2.13-4.1.0.tgz 
