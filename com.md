@@ -1,3 +1,8 @@
+pip install uv
+uv venv
+source .venv/bin/activate
+
+
 `wget https://downloads.apache.org/kafka/4.1.0/kafka_2.13-4.1.0.tgz` 
 
 `wget https://downloads.apache.org/kafka/4.1.0/kafka_2.13-4.1.0.tgz` 
