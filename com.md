@@ -18,3 +18,17 @@ source .venv/bin/activate
 `bin/kafka-console-producer.sh --topic server-metrics --bootstrap:localhost:9092`
 
 `bin/kafka-console-consumer.sh --topic server-metrics --bootstrap:localhost:9092 --from-beginning`
+
+-------------------------------------------------------------------------------
+cd /workspaces/AIOps
+source .venv/bin/activate
+python producer.py
+python consumer.py
+Airflow
+export AIRFLOW_HOME=/workspaces/AIOps/airflow
+airflow config get-value core dags_folder
+airflow dags list
+airflow dags list-import-errors
+airflow standalone
+airflow dags trigger aiops_workflow
+airflow dags list-runs -d aiops_workflow
