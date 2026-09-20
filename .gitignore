@@ -16,12 +16,13 @@ kafka_*/
 # Runtime logs
 *.log
 logs/
-
+.airflow*
 # Environment variables & secrets
 .env
 .env.*
 
 # VS Code settings
 .vscode/
-
 .*.tgz
+__pycache__
+logs
