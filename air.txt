@@ -3,8 +3,18 @@ source .venv/bin/activate
 python producer.py
 python consumer.py
 Airflow
+pip install uv
+uv venv --python 3.14
+source .venv/bin/activate
 export AIRFLOW_HOME=/workspaces/AIOps/airflow
-airflow config get-value core dags_folder
+mkdir -p $AIRFLOW_HOME/dags
+uv pip install apache-airflow
+airflow db migrate
+cd $AIRFLOW_HOME/dags
+touch aiops_dag.py
+airflow standalone
+airflow dags list | grep aiops
+*airflow config get-value core dags_folder
 airflow dags list
 airflow dags list-import-errors
 airflow standalone
