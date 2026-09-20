@@ -8,5 +8,6 @@ airflow config get-value core dags_folder
 airflow dags list
 airflow dags list-import-errors
 airflow standalone
+airflow dags unpause aiops_workflow
 airflow dags trigger aiops_workflow
 airflow dags list-runs -d aiops_workflow
